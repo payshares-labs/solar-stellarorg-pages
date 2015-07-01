@@ -1,0 +1,18 @@
+{
+  "name": "solar-stellarorg-pages",
+  "version": "0.1.0",
+  "description": "Solar css module for StellarOrg webpages",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stellar/solar-stellarorg-pages.git"
+  },
+  "author": "Stellar Development Foundation (https://www.stellar.org/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/stellar/solar-stellarorg-pages/issues"
+  },
+  "homepage": "https://github.com/stellar/solar-stellarorg-pages"
+}
