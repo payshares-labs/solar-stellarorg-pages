@@ -1,20 +1,22 @@
 .sp-logo, a.sp-logo {
   text-decoration: none;
+  // font size is set in .sp-logo so that the separator inherits it
+  font-size: $s-scale-1;
 }
   .sp-logo__main, a.sp-logo__main {
     color: $s-color-primary3;
     text-transform: lowercase;
   }
-  .sp-logo__subSite {
-    // color: $s-color-neutral1;
-  }
-  .sp-logo__subSite:before {
+  .sp-logo__separator {
     display: inline;
 
     border-left: 1px solid currentColor;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 
-    content: '';
-    height: auto;
+    // hide the space (for a space in the text representation)
+    letter-spacing: -1em;
+  }
+  .sp-logo__subSite {
+    font-size: $s-scale-3;
   }
