@@ -1,0 +1,20 @@
+.sp-logo, a.sp-logo {
+  text-decoration: none;
+}
+  .sp-logo__main, a.sp-logo__main {
+    color: $s-color-primary3;
+    text-transform: lowercase;
+  }
+  .sp-logo__subSite {
+    // color: $s-color-neutral1;
+  }
+  .sp-logo__subSite:before {
+    display: inline;
+
+    border-left: 1px solid currentColor;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+
+    content: '';
+    height: auto;
+  }
