@@ -40,8 +40,23 @@ $spu-border-sizes: 1 2 3;
   }
 }
 
-@each $color in ($s-color-neutralList {
-  .spu-borderColor-#{nth($color, 1)} {
-    border-color: nth($color, 2);
+
+@each $color-list in $s-color-listList {
+  @each $color in $color-list {
+    .spu-borderColor-#{nth($color, 1)} {
+      border-color: nth($color, 2);
+    }
   }
 }
+// GENERATES:
+// .spu-borderColor-neutral1
+// .spu-borderColor-neutral2
+// .spu-borderColor-neutral3
+// .spu-borderColor-neutral4
+// .spu-borderColor-neutral5
+// .spu-borderColor-neutral6
+// .spu-borderColor-primary1
+// .spu-borderColor-primary2
+// .spu-borderColor-primary3
+// .spu-borderColor-primary4
+// .spu-borderColor-primary5
