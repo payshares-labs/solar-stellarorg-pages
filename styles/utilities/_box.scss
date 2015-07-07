@@ -1,0 +1,47 @@
+// utilities for stuff related to the box model
+// Not using extend so that inspect is cleaner
+// Keeping the source here simple sass
+
+$spu-border-sizes: 1 2 3;
+
+// reset borders
+.spu-border-0 {
+  border-width: 0px !important;
+}
+
+@each $size in $spu-border-sizes {
+  // all sides
+  .spu-border-#{$size} {
+    border: $size + px solid;
+  }
+
+  // one side
+  .spu-borderTop-#{$size} {
+    border-top: $size + px solid;
+  }
+  .spu-borderLeft-#{$size} {
+    border-left: $size + px solid;
+  }
+  .spu-borderRight-#{$size} {
+    border-right: $size + px solid;
+  }
+  .spu-borderBottom-#{$size} {
+    border-bottom: $size + px solid;
+  }
+
+  // two sides
+  .spu-borderTB-#{$size} {
+    border-top: $size + px solid;
+    border-bottom: $size + px solid;
+  }
+  .spu-borderLR-#{$size} {
+    border-left: $size + px solid;
+    border-right: $size + px solid;
+  }
+}
+
+@each $color in ($s-color-neutralList {
+  .spu-borderColor-#{nth($color, 1)} {
+    border-color: nth($color, 2);
+  }
+}
