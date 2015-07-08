@@ -1,0 +1,15 @@
+// Opinionated sizes
+@include r-media(s) {
+  .sp-col-half {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  .sp-col-third {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+  .sp-col-fourth {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+}
