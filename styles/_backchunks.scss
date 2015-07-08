@@ -8,6 +8,7 @@
 //   a `back` can not be nested inside another `back`
 //   a `chunk` should not be nested inside another `chunk`
 //   a `back` must contain 1 or more `chunks` and nothing else
+//   a `chunk`'s set dimensions may not change
 
 .sp-back {
   // 2em absolute padding
@@ -19,4 +20,11 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1098px; // 12*75+11*18
+}
+
+// clearfix
+.sp-chunk:after {
+  content: "";
+  display: table;
+  clear: both;
 }
