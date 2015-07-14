@@ -1,4 +1,4 @@
-// Opinionated sizes
+// Opinionated sizes (that will automagically respond)
 @include r-media(s) {
   .sp-col-half {
     @include span-columns(6);

@@ -2,6 +2,40 @@
 // Not using extend so that inspect is cleaner
 // Keeping the source here simple sass
 
+// padding are in em's represented by integers 10 times the em
+$spu-pad-sizes: 5 10 15 20 30 40 50;
+
+@each $size in $spu-pad-sizes {
+  .spu-pad-#{$size} {
+    padding: $size;
+  }
+
+  // one side
+  .spu-padTop-#{$size} {
+    padding-top: $size/10 + em;
+  }
+  .spu-padStart-#{$size} {
+    padding-left: $size/10 + em;
+  }
+  .spu-padEnd-#{$size} {
+    padding-right: $size/10 + em;
+  }
+  .spu-padBottom-#{$size} {
+    padding-bottom: $size/10 + em;
+  }
+
+  // two sides
+  .spu-padTB-#{$size} {
+    padding-top: $size/10 + em;
+    padding-bottom: $size/10 + em;
+  }
+  .spu-padSE-#{$size} {
+    padding-left: $size/10 + em;
+    padding-right: $size/10 + em;
+  }
+}
+
+
 $spu-border-sizes: 1 2 3;
 
 // reset borders
@@ -19,10 +53,10 @@ $spu-border-sizes: 1 2 3;
   .spu-borderTop-#{$size} {
     border-top: $size + px solid;
   }
-  .spu-borderLeft-#{$size} {
+  .spu-borderStart-#{$size} {
     border-left: $size + px solid;
   }
-  .spu-borderRight-#{$size} {
+  .spu-borderEnd-#{$size} {
     border-right: $size + px solid;
   }
   .spu-borderBottom-#{$size} {
@@ -34,7 +68,7 @@ $spu-border-sizes: 1 2 3;
     border-top: $size + px solid;
     border-bottom: $size + px solid;
   }
-  .spu-borderLR-#{$size} {
+  .spu-borderSE-#{$size} {
     border-left: $size + px solid;
     border-right: $size + px solid;
   }
