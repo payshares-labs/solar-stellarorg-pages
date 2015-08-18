@@ -7,7 +7,7 @@ $spu-pad-sizes: 5 10 15 20 30 40 50;
 
 @each $size in $spu-pad-sizes {
   .spu-pad-#{$size} {
-    padding: $size;
+    padding: $size/10 + em;
   }
 
   // one side
@@ -40,7 +40,7 @@ $spu-border-sizes: 1 2 3;
 
 // reset borders
 .spu-border-0 {
-  border-width: 0px !important;
+  border-width: 0px;
 }
 
 @each $size in $spu-border-sizes {
