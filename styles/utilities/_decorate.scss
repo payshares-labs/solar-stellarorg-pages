@@ -1,0 +1,17 @@
+// TODO: Could be named better
+
+@each $color-list in $s-color-listList {
+  @each $color in $color-list {
+    .spu-background-#{nth($color, 1)} {
+      background-color: nth($color, 2);
+    }
+  }
+}
+
+@each $color-list in $s-color-listList {
+  @each $color in $color-list {
+    .spu-color-#{nth($color, 1)} {
+      color: nth($color, 2);
+    }
+  }
+}
