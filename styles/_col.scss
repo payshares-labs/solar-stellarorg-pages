@@ -1,14 +1,14 @@
 // Opinionated sizes (that will automagically respond)
 @include r-media(s) {
-  .sp-col-half {
+  .so-col-half {
     @include span-columns(6);
     @include omega(2n);
   }
-  .sp-col-third {
+  .so-col-third {
     @include span-columns(4);
     @include omega(3n);
   }
-  .sp-col-fourth {
+  .so-col-fourth {
     @include span-columns(3);
     @include omega(4n);
   }

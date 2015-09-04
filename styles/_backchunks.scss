@@ -10,20 +10,20 @@
 //   a `back` must contain 1 or more `chunks` and nothing else
 //   a `chunk`'s set dimensions may not change
 
-.sp-back {
+.so-back {
   // 2em absolute padding
   padding-left: 36px;
   padding-right: 36px;
 }
 
-.sp-chunk {
+.so-chunk {
   margin-left: auto;
   margin-right: auto;
   max-width: 1098px; // 12*75+11*18
 }
 
 // clearfix
-.sp-chunk:after {
+.so-chunk:after {
   content: "";
   display: table;
   clear: both;
