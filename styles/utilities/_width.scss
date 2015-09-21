@@ -1,0 +1,11 @@
+// Unlike in other utilities, the numbers are represented in pixels
+// To signify this difference, the sizes have a px at the end
+
+// Taken from 20x^2
+$spu-width-pxSizes: 80 180 320 500 720 980;
+
+@each $size in $spu-width-pxSizes {
+  .spu-maxWidth-#{$size} {
+    padding: $size/10 + em;
+  }
+}

@@ -1,3 +1,20 @@
 .so-unlist {
   list-style-type: none;
 }
+
+// a simple spaced out list of links (unrelated to linked lists)
+// expects ul > li structure
+.so-linkList {
+  list-style-type: none;
+  color: $s-color-primary2;
+}
+  .so-linkList__item {
+    margin-bottom: 0.25em;
+  }
+  .so-linkList__item a {
+    color: $s-color-primary2;
+  }
+  .so-linkList__item a:hover {
+    color: $s-color-primary1;
+    text-decoration: underline;
+  }
