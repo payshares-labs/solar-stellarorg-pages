@@ -1,11 +1,7 @@
-// Unlike in other utilities, the numbers are represented in pixels
-// To signify this difference, the sizes have a px at the end
+$spu-maxWidth-sizes: 10 20 30 40 50;
 
-// Taken from 20x^2
-$spu-width-pxSizes: 80 180 320 500 720 980;
-
-@each $size in $spu-width-pxSizes {
+@each $size in $spu-maxWidth-sizes {
   .spu-maxWidth-#{$size} {
-    padding: $size/10 + em;
+    max-width: $size + em;
   }
 }
