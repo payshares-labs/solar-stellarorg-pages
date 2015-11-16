@@ -3,7 +3,7 @@
 // Keeping the source here simple sass
 
 // padding are in em's represented by integers 10 times the em
-$spu-pad-sizes: 5 10 15 20 25 30 40 50;
+$spu-pad-sizes: 0 5 10 15 20 25 30 40 50;
 
 @each $size in $spu-pad-sizes {
   .spu-pad-#{$size} {
