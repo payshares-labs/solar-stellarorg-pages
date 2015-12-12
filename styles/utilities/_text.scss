@@ -1,0 +1,10 @@
+.spu-textUppercase {
+  text-transform: uppercase;
+}
+
+@include r-media(l) {
+  // Span will take up a fill line if viewport is large or greater
+  .spu-lineFullL {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+// so-slant adds the slanted border effect
+
+// A potentially better way might be to use a svg image for the background and
+// fill it with currentColor. The slant could then be configured by css "color".
+// The downside with the svg approach is that it uses "color" and not "background".
+// The upside is that the slant is consistent and easily adjustable
+.so-slant {
+  position: absolute;
+  left: -40px;
+  right: -40px;
+  bottom: -80px;
+
+  height: 120px;
+  transform: rotate(-3.4deg);
+
+  @include r-media(m) {
+    transform: rotate(-2.6deg);
+  }
+  @include r-media(l) {
+    transform: rotate(-1.8deg);
+  }
+  @include r-media(xl) {
+    transform: rotate(-1.4deg);
+  }
+  @include r-media(2xl) {
+    transform: rotate(-1deg);
+  }
+}
+
+.so-slantContainer {
+  position: relative;
+  overflow: hidden;
+}
